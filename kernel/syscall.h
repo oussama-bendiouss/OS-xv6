@@ -32,4 +32,6 @@
 #define SYS_acquire_mutex 25
 #define SYS_release_mutex 26
 
+#define SYS_read_kmem 30
+
 #endif
