@@ -534,7 +534,7 @@ scheduler(void)
       // again to avoid a race between interrupt and WFI.
       c->intena = 0;
 
-      release(&p->lock);
+      // release(&p->lock);
     }
     if(found == 0){
       asm volatile("wfi");
