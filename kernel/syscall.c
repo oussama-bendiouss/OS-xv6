@@ -109,7 +109,6 @@ extern uint64 sys_nice(void);
 extern uint64 sys_create_mutex(void);
 extern uint64 sys_acquire_mutex(void);
 extern uint64 sys_release_mutex(void);
-extern uint64 sys_read_kmem(void);
 
 static uint64 (*syscalls[])(void) = {
 [SYS_fork]    sys_fork,
@@ -138,7 +137,6 @@ static uint64 (*syscalls[])(void) = {
 [SYS_create_mutex]  sys_create_mutex,
 [SYS_acquire_mutex]  sys_acquire_mutex,
 [SYS_release_mutex]  sys_release_mutex,
-[SYS_read_kmem] sys_read_kmem,
 };
 
 void

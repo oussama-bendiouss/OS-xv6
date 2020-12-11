@@ -100,14 +100,3 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
-
-uint64
-sys_read_kmem(void)
-{
-   uint64 addr;
-   argaddr(0, &addr);
-   
-   printf("Call read kernel mem with addr: %p\n", addr);
-   
-   return *(int *)addr;
-}
